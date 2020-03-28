@@ -11,7 +11,96 @@
 	</head>
 
 	<body>
+		<header class="page-header">
+			<a class="page-header__logo">
+				<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп">
+			</a>
+			<nav class="main-nav">
+				<button type="main-nav__toggle" type="button">Открыть меню</button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item site-list__item--active">
+							<a>Главная</a>
+						</li>
+						<li class="site-list__item">
+							<a href="photo.html">Наши работы</a>
+						</li>
+						<li class="site-list__item">
+							<a href="form.html">Записаться</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#">Контакты</a>
+						</li>
+						<li class="site-list__item">
+							<a href="evg.by">Разработчик</a>
+						</li>
+					</ul>
+					<ul class="main-nav__list user-list">
+						<li class="user-list__item">
+							<a class="user-list__login" href="login.html">Войти</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 
-</body>
+		</header>
+
+		<main class="page-main">
+
+			<h1 class="visually-hidden">Барбершоп - мужская классика</h1>
+
+			<section class="stats">
+				<header class="stats__header">
+					<h2 class="visually-hidden">Статистика Барбершопа</h2>
+					<b class="stats__slogan">Стрижка у нас это выгодно!</b>
+					<p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+					<small class="stats__legend stats__legend--top">
+						<sup>*</sup> - приведенные данные ложь
+					</small>
+				</header>
+				<table class="stats__list">
+					<tr>
+						<td class="stats__value">
+							1 500 <sup>*</sup>
+						</td>
+						<td class="stats__field">
+							рублей<br> вложений
+						</td>
+					</tr>
+					<tr>
+						<td class="stats__value">
+							7 200
+						</td>
+						<td class="stats__field">
+							секунд<br> времени мастера
+						</td>
+					</tr>
+					<tr>
+						<td class="stats__value">
+							90 000
+						</td>
+						<td class="stats__field">
+							постриженных<br> волос
+						</td>
+					</tr>
+					<tr>
+						<td class="stats__value">
+							500 000 <sup>*</sup>
+						</td>
+						<td class="stats__field">
+							лайков<br> и комплиментов
+						</td>
+					</tr>
+				</table>
+				<small class="stats__legend stats__legend--bottom">
+					<sup>*</sup> - приведенные данные ложь
+				</small>
+
+
+			</section>
+
+		</main>
+
+	</body>
 
 </html>
