@@ -4,7 +4,6 @@
 	<head>
 
 		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
-
 		<title>Barbershop new</title>
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
@@ -14,7 +13,11 @@
 	<body>
 		<header class="page-header">
 			<a class="page-header__logo">
-				<img class="page-header__logo-image" src="img/logotype-mobile.png" width="226" height="30" alt="Барбершоп">
+				<picture>
+		      <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+		      <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+		      <img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+		    </picture>
 			</a>
 			<nav class="main-nav main-nav--closed main-nav--nojs">
 				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
