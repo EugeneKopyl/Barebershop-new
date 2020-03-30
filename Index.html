@@ -3,14 +3,23 @@
 
 	<head>
 
-		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+		<meta charset="UTF-8">
 		<title>Barbershop new</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 
 	</head>
 
 	<body>
+
+<svg style="display: none">
+	<symbol viewBox="0 0 16 16" id="icon-login">
+		<polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>
+	</symbol>
+</svg>
+
+
 		<header class="page-header">
 			<a class="page-header__logo">
 				<picture>
@@ -27,7 +36,7 @@
 							<a>Главная</a>
 						</li>
 						<li class="site-list__item">
-							<a href="photo.html">Наши работы</a>
+							<a href="pages/works-item.html">Наши работы</a>
 						</li>
 						<li class="site-list__item">
 							<a href="form.html">Записаться</a>
@@ -42,7 +51,8 @@
 					<ul class="main-nav__list user-list">
 						<li class="user-list__item">
 							<a class="user-list__login" href="login.html">
-		            <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/></svg>
+								<svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/></svg>
+								<svg class="user-list__login-icon" width="16" height="16"><use href="#icon-login"></use></svg>
 		            Войти
 		          </a>
 						</li>
