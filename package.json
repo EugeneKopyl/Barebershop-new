@@ -18,7 +18,14 @@
   "homepage": "https://github.com/EugeneKopyl/Barebershop-new#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.5",
+    "browser-sync": "^2.26.7",
+    "csso": "^4.0.3",
     "gulp": "^4.0.2",
-    "stylelint": "^13.2.1"
-  }
+    "less": "^3.11.1",
+    "plumber": "^0.4.8",
+    "rename": "^1.0.4",
+    "stylelint": "^13.2.1",
+    "svgstore": "^3.0.0-2"
+  },
+  "dependencies": {}
 }
