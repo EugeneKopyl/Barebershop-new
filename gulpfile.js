@@ -13,6 +13,7 @@ dulp.task("style", function () {
 			autoprefixer()
 		]))
 		.pipe(gulp.dest("source/css"))
+		.pipe(server.stream());
 });
 
 gulp.task("serve", ["style"], function() {
@@ -20,4 +21,6 @@ gulp.task("serve", ["style"], function() {
 		server: "source/"
 	});
 	gulp.watch("source/less/**/*.less", ["style"]);
+	gulp.watch("source/*.html")
+		.on("change", server.reload);
 });
