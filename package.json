@@ -5,6 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+		"editorconfig": "editorconfig-cli",
+		"stylelint": "stylelint 'source/less/**/*.less' --syntax less",
+		"test": "npm run editorconfig && npm run stylelint",
+		"build": "gulp build",
+		"start": "npm run build && gulp serve"
   },
   "repository": {
     "type": "git",
