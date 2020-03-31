@@ -5,11 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-		"editorconfig": "editorconfig-cli",
-		"stylelint": "stylelint 'source/less/**/*.less' --syntax less",
-		"test": "npm run editorconfig && npm run stylelint",
-		"build": "gulp build",
-		"start": "npm run build && gulp serve"
   },
   "repository": {
     "type": "git",
@@ -25,10 +20,15 @@
     "autoprefixer": "^9.7.5",
     "browser-sync": "^2.26.7",
     "csso": "^4.0.3",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
+    "imagemin": "^7.0.1",
+    "include": "^1.1.0",
     "less": "^3.11.1",
     "plumber": "^0.4.8",
+    "posthtml": "^0.12.0",
     "rename": "^1.0.4",
+    "run-sequence": "^2.2.1",
     "stylelint": "^13.2.1",
     "svgstore": "^3.0.0-2"
   },
