@@ -249,11 +249,6 @@ img {
     display: none;
   }
 }
-/* @media (min-width: 1200px) {
-  .main-nav__wrapper {
-    width: 960px;
-  }
-} */
 
 /* file blocks/site-list.less */
 
@@ -353,7 +348,6 @@ img {
   }
 }
 
-
 /* file blocks/user-list.less */
 
 .user-list__login {
@@ -372,11 +366,9 @@ img {
   width: 16px;
   height: 16px;
   opacity: 0.3;
-	fill: #ffffff; /* svg style */
+	fill: #ffffff;
 }
-/* .user-list__login-icon polygon {
-  fill: #ffffff;
-} */
+
 
 @media (min-width: 768px) {
   .user-list {
@@ -392,16 +384,10 @@ img {
     opacity: 1;
 		fill: #826550;
   }
-  /* .user-list__login:hover .user-list__login-icon polygon {
-    fill: #826550;
-  } */
   .user-list__login:active .user-list__login-icon {
     opacity: 0.3;
 		fill: #ffffff;
   }
-  /* .user-list__login:active .user-list__login-icon polygon {
-    fill: #ffffff;
-  } */
   .user-list__login-icon {
     top: 29px;
     left: 12px;
@@ -438,16 +424,10 @@ img {
     opacity: 0.3;
 		fill: #000000;
   }
-  /* .user-list__login:hover .user-list__login-icon polygon {
-    fill: #000000;
-  } */
 	.user-list__login:active .user-list__login-icon {
     opacity: 0.1;
 		fill: #ffffff;
   }
-	/* .user-list__login:active .user-list__login-icon polygon{
-		fill: #ffffff;
-  } */
   .user-list__login-icon {
     left: 15px;
   }
@@ -654,6 +634,7 @@ img {
 }
 
 /* Файл blocks/page-title.less */
+
 .page-title {
   margin: 0 auto;
   padding: 30px 0;
@@ -698,6 +679,267 @@ img {
     padding-top: 60px;
   }
 }
+
+/* быстро круто дорого
+------------------------------------------------------------------ */
+
+.advantages__title {
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.advantages__list {
+	list-style: none;
+	padding-inline-start: 0px;
+}
+.advantages__item {
+	padding: 130px 20px 0px 20px;
+	position: relative;
+}
+.advantages__item--fast {
+	background-image: url("../img/advantage-1-scisors.png");
+	background-repeat: no-repeat;
+	background-position: center 25px;
+}
+.advantages__item--cool {
+	background-image: url("../img/advantage-1-cool.png");
+	background-repeat: no-repeat;
+	background-position: center 25px;
+}
+.advantages__item--price {
+	background-image: url("../img/advantage-1-price.png");
+	background-repeat: no-repeat;
+	background-position: center 25px;
+}
+.advantages__title {
+	margin-bottom: 0px;
+}
+.advantages__description {
+		font-size: 20px;
+		padding-left: 25px;
+		padding-right: 25px;
+		text-align: center;
+}
+
+@media (max-width: 768px) {
+	.advantages__description {
+		min-height: 6em;
+	}
+	.advantages__item--cool {
+		display: none;
+	}
+	.advantages__item--price {
+		display: none;
+	}
+	button.slider__toggle {
+		padding: 0px;
+		font-size: 0px;
+		width: 8px;
+		height: 8px;
+		background-color: transparent;
+		border: 1px solid #ffffff;
+		transform: rotate(45deg);
+	}
+
+	button.slider__toggle:hover {
+		background-color: #ffffff;
+	}
+	button.slider__toggle:active {
+		background-color: #000000;
+	}
+	button.slider__toggle-selected {
+		background-color: #ffffff;
+	}
+	p.advantages__toggles {
+		display: flex;
+		padding-left: 35%;
+		padding-right: 35%;
+		align-items: center;
+		justify-content: space-around;
+		position: relative;
+	}
+}
+
+@media (min-width: 768px) {
+	.advantages__title {
+		margin: 0px;
+		text-align: left;
+	}
+	.advantages__item {
+		margin: 45px 35px 0px 30px;
+		padding: 0px 20px 40px 160px;
+		min-height: 95px;
+		}
+	.advantages__item::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0px;
+		left: 0;
+		height: 1px;
+		background: #4e4e4e;
+	}
+	.advantages__item:last-child::after {
+		display: none;
+	}
+	.advantages__list {
+		width: auto;
+		margin: 0 auto;
+	}
+	.advantages__wrapper {
+		width: 84%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.advantages__description {
+		padding-left: 0px;
+		padding-right: 36px;
+		text-align: left;
+	}
+	.advantages__item--fast, .advantages__item--cool,.advantages__item--price {
+		background-position: left 0px;
+	}
+	.advantages__toggles {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.advantages__list {
+		display: flex;
+	}
+	.advantages__item {
+		margin-top: 0px;
+		padding: 130px 0 0 0;
+	}
+	.advantages__title {
+		text-align: center;
+	}
+	.advantages__item--fast, .advantages__item--cool,.advantages__item--price {
+		background-position: center 0px;
+	}
+	.advantages__item::after {
+		display: none;
+	}
+	.advantages__wrapper {
+		padding-top: 80px;
+	}
+	.advantages__description {
+		text-align: center;
+		padding-right: 0;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+/* -------------------------------------------------------------------
+---------------------------------------------------------------------- */
+
+/* news новостной блог------------------------------------------------ */
+
+.news {
+	color: #000000;
+	background-color: #f8f5f2;
+}
+
+.news__title {
+	position: relative;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 36px;
+	width: 100%;
+}
+
+.news__list {
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.news__item {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.news__date {
+	display: flex;
+	flex-direction: column;
+	margin-top: 25px;
+	width: 50px;
+	height: 50px;
+	color: white;
+	background-color: black;
+}
+time.news__date::after {
+	content: "";
+	position: relative;
+	top: 11px;
+	left: 0;
+	border-top: 10px solid black;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+.news__day {
+	width: 50px;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 0;
+}
+.news__month {
+	height: 10px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: -8px;
+	padding: 0px;
+}
+.news__to-all {
+	margin: 0px 20px;
+}
+.news__text {
+	margin-left: 20px;
+	text-align: left;
+}
+h2.news__title {
+	margin-top: 45px;
+}
+.news__title::before {
+	content: "";
+	position: absolute;
+	top: -35px;
+	left: 0;
+	height: 35px;
+	width: 100%;
+	background-image: url("../img/news-tr.png");
+	background-size: 100% 35px;
+}
+
+@media (min-width: 768px) {
+	h2.news__title {
+		margin-top: 90px;
+	}
+	.news__title::before {
+		top: -68px;
+		height: 68px;
+		background-image: url("../img/news-tr-768.png");
+		background-size: 100% 68px;
+	}
+}
+
+@media (min-width: 1200px) {
+	h2.news__title {
+		margin-top: 105px;
+	}
+	.news__title::before {
+		top: -68px;
+		height: 68px;
+		background-image: url("../img/news-tr-1200.png");
+		background-size: 100% 68px;
+	}
+}
+
 /* Файл blocks/button.less */
 .button {
   display: block;
