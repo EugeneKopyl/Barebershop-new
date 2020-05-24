@@ -1259,6 +1259,7 @@ li.social__item:active {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+
 	.page-footer__social {
 		order: 2;
 		flex: 100%;
